@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
 import './estilos-banner.styl'
+import Image from 'react-lazy-image'
 
 class Banner extends PureComponent {
 	componentDidMount() {
@@ -119,7 +120,7 @@ class Banner extends PureComponent {
 	render() {
 		return (
 			<div className='banner-animation' id="particles-js">
-				<img src="./static/img/logo@2x.png" />
+				<Image source="./static/img/logo@2x.png" />
 			</div>
 		)
 	}

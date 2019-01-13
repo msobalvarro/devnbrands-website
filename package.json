@@ -45,9 +45,10 @@
     "axios": "^0.18.0",
     "react": "16.4.1",
     "react-dom": "16.4.1",
+    "react-lazy-image": "^1.1.0",
     "react-responsive": "^5.0.0",
     "react-router-dom": "4.2.2",
-    "scrollreveal": "^4.0.4"
+    "scrollreveal": "^4.0.5"
   },
   "author": "msobalvarro",
   "license": "ISC",

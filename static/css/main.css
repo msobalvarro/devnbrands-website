@@ -37,6 +37,12 @@
 }
 .nav-bar {
   background-color: rgba(0,0,0,0.95);
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
   position: fixed;
   display: -webkit-box;
   display: -moz-box;
@@ -54,7 +60,14 @@
   left: 0px;
   right: 0px;
   border-bottom: 2px solid #4d4d4d;
+  position: relative;
   z-index: 100;
+}
+.nav-bar .name {
+  position: absolute;
+  color: #fff;
+  font-size: 1em;
+  left: 1%;
 }
 .nav-bar a {
   text-decoration: none;
@@ -73,4 +86,77 @@
 }
 .nav-bar a.active {
   background-color: rgba(250,250,250,0.2);
+}
+.content-main {
+  background-color: #302f2f;
+}
+.content-main p.descripcion {
+  color: #95989a;
+  font-size: 28px;
+  text-align: center;
+  font-weight: lighter;
+  width: 75%;
+  margin: 75px auto;
+}
+.content-main .marketing {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -moz-box-pack: space-evenly;
+  -o-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+  overflow: visible;
+}
+.content-main .marketing .item {
+  background-color: rgba(240,240,240,0.25);
+  -webkit-box-shadow: 0 15px 25px 0px rgba(0,0,0,0.5);
+  box-shadow: 0 15px 25px 0px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 20px 0;
+  width: 35%;
+}
+.content-main .marketing .item img {
+  max-width: 60%;
+}
+.content-main .marketing .item .title-item {
+  color: #a8f296;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 1em;
+}
+.content-main .marketing .item p {
+  color: #fff;
+  text-align: center;
+  width: 80%;
 }

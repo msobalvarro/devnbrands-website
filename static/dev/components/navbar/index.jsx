@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import { Link } from 'react-router-dom'
-import './index.styl'
+import './estilos-navbar.styl'
 
 class NavBar extends PureComponent {
 	state = {
@@ -27,6 +27,7 @@ class NavBar extends PureComponent {
 	render() {
 		return (
 			<nav className='nav-bar'>
+				<span className="name">Dev & Brands</span>
 				{
 					this.state.items.map(
 						(item, index) => {
