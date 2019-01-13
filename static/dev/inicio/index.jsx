@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import Banner from '../components/banner/'
 import NavBar from '../components/navbar/'
 import Image from 'react-lazy-image'
+import { Link } from 'react-router-dom'
 import './estilos-inicio.styl'
 class Index extends PureComponent {
 	render() {
@@ -40,6 +41,24 @@ class Index extends PureComponent {
 							</p>
 						</div>
 					</div>
+				</div>
+
+				<div className="gestion-hosting fadeIn">
+					<div className="search-simulation">
+						www.yoursite.com
+					</div>
+
+					<p>
+						NOSOTROS GESTIONAMOS TU DOMINIO
+					</p>
+
+					<p>
+						Con D&B  no tienes que preocuparte por nada, nosotros nos encargamos
+						de todo el proceso de formulación, desarrollo y puesta en marcha de tu página web.
+					</p>
+
+					<Link className="btn-getStart" to="#">Empecemos</Link>
+
 				</div>
 
 			</div>
