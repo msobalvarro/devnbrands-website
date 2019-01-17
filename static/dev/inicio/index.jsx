@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import Banner from '../components/banner/'
 import NavBar from '../components/navbar/'
+import Footer from '../components/footer'
 import Image from 'react-lazy-image'
 import { Link } from 'react-router-dom'
 import './estilos-inicio.styl'
@@ -61,6 +62,7 @@ class Index extends PureComponent {
 
 				</div>
 
+				<Footer />
 			</div>
 		)
 	}
