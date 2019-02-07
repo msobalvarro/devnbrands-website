@@ -284,3 +284,50 @@
   padding: 12px;
   font-weight: bold;
 }
+.content-main {
+  background-color: #302f2f;
+  color: #fff;
+  padding: 10px 0;
+}
+.content-main h1 {
+  margin: 25px 0;
+  text-align: center;
+}
+.content-main .sub-content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin: 10px auto;
+  width: 90%;
+}
+.content-main .sub-content .col {
+  width: 50%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.content-main .sub-content .col p {
+  margin: 10px 0;
+}
+.content-main .sub-content .col img {
+  margin: auto;
+  max-width: 90%;
+}
