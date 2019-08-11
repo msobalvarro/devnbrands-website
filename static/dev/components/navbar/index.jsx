@@ -15,7 +15,7 @@ class NavBar extends PureComponent {
 			},
 			{
 				text: 'Contácto',
-				src: '/'
+				src: '/contacto'
 			},
 			{
 				text: 'Servicios',

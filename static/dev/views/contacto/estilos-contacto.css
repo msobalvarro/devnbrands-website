@@ -1,0 +1,39 @@
+#view-contact {
+    padding: 25px 0;
+}
+
+#view-contact h2 {
+    color: #FFF;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#view-contact .body-contact {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#view-contact .body-contact .form {
+    width: 480px;
+}
+
+
+#view-contact .body-contact .form .row {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+#view-contact .body-contact .form .row span {
+    color: #FFF;
+    margin-bottom: 5px;
+}
+
+#view-contact .body-contact .letter {
+    background-color: #FFF;
+    min-height: 400px;
+    width: 500px;
+}

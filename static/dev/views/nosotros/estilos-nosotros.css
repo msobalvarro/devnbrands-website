@@ -1,27 +1,27 @@
-.content-main {
+#view-about {
     background-color: #302f2f;
     color: #fff;
     padding: 10px 0;
 }
-.content-main h1 {
+#view-about h1 {
     margin: 25px 0;
     text-align: center;
 }
-.content-main .sub-content {
+#view-about .sub-content {
     display: flex;
     justify-content: center;
     margin: 10px auto;
     width: 90%;
 }
-.content-main .sub-content .col {
+#view-about .sub-content .col {
     width: 50%;
     display: flex;
     flex-direction: column;
 }
-.content-main .sub-content .col p {
+#view-about .sub-content .col p {
     margin: 10px 0;
 }
-.content-main .sub-content .col img {
+#view-about .sub-content .col img {
     margin: auto;
     max-width: 90%;
 }

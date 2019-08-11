@@ -4,9 +4,7 @@
   "description": "web page for devnbrands",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "build": "webpack --config webpack.config.js",
-    "build:watch": "webpack --config webpack.config.js --watch"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -40,7 +38,8 @@
     "react-lazy-image": "^1.1.0",
     "react-responsive": "^5.0.0",
     "react-router-dom": "4.2.2",
-    "scrollreveal": "^4.0.5"
+    "scrollreveal": "^4.0.5",
+    "typed.js": "^2.0.10"
   },
   "author": "msobalvarro",
   "license": "ISC",

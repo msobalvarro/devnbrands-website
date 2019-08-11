@@ -1,7 +1,4 @@
-.content-main {
-    background-color: #302f2f;
-}
-.content-main p.descripcion {
+#view-index .content-main p.descripcion {
     color: #95989a;
     font-size: 28px;
     text-align: center;
@@ -9,13 +6,15 @@
     width: 75%;
     margin: 75px auto;
 }
-.content-main .marketing {
+
+#view-index .content-main .marketing {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 50px;
     overflow: visible;
 }
-.content-main .marketing .item {
+
+#view-index .content-main .marketing .item {
     background-color: rgba(240,240,240,0.25);
     box-shadow: 0 15px 25px 0px rgba(0,0,0,0.5);
     border-radius: 5px;
@@ -26,48 +25,59 @@
     padding: 20px 0;
     width: 35%;
 }
-.content-main .marketing .item img {
+
+#view-index .content-main .marketing .item img {
     max-width: 60%;
 }
-.content-main .marketing .item .title-item {
+
+#view-index .content-main .marketing .item .title-item {
     color: #a8f296;
     margin: 10px 0;
     text-align: center;
     font-size: 1em;
 }
-.content-main .marketing .item p {
+
+#view-index .content-main .marketing .item p {
     color: #fff;
     text-align: center;
     width: 80%;
 }
-.gestion-hosting {
-    background-image: url("../../img/baner-site.png");
+
+#view-index .gestion-hosting {
+    align-items: center;
+    background-image: url("../../../img/baner-site.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
-    padding: 25px 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 25px 0;
+    justify-content: space-between;
+    min-height: 250px;
 }
-.gestion-hosting .search-simulation {
+
+#view-index .gestion-hosting .search-simulation {
     background-color: rgba(83,83,83,0.65);
-    background-image: url("../../img/star.png");
+    background-image: url("../../../img/star.png");
     background-repeat: no-repeat;
     background-position: 98% center;
     background-size: 30px;
+    border-radius: 30px;
     color: #e4ebef;
+    font-size: 2em;
     padding: 10px;
     padding-left: 25px;
-    border-radius: 30px;
-    font-size: 2em;
+    min-height: 2em;
     width: 80%;
 }
-.gestion-hosting p {
+
+#view-index .gestion-hosting p {
     color: #c4d1d9;
-    margin: 15px auto;
+    text-align: center;
+    margin: 10px 0;
 }
-.gestion-hosting .btn-getStart {
+
+#view-index .gestion-hosting .btn-getStart {
     background-color: #abff00;
     border-radius: 5px;
     color: #2d2d2d;
