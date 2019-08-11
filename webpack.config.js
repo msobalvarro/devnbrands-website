@@ -1,28 +1,29 @@
 const path = require('path')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
 	resolve: {
-		extensions: ['.js', '.jsx', '.styl', '.css'] // Archivos que soportará webpack
+		extensions: ['.js', '.jsx', '.css'] // Archivos que soportará webpack
 	},
-	entry: ['babel-polyfill', './static/dev/app.main.js'],
+	entry: ['@babel/polyfill', './static/dev/app.main.js'],
 	// mode: 'production',
 	mode: 'development',
-	devServer: {
-		port: 9000,
-	},
 	module: {
 		rules: [
+			// Configuracion de los presets y los archivos de react
 			{
 				test: /\.(js|jsx)$/,
 				exclude: /(node_modules)/,
 				use: {
 					loader: 'babel-loader',
 					options: {
-						presets: ["react", "es2015", "es2017", "stage-0"],
-					}
+                        presets: ["@babel/preset-env", "@babel/preset-react"],
+                        plugins: ['transform-class-properties']
+                    }
 				}
 			},
+
+			// Configuracion de los staticos a base64
 			{
 				test: /\.(jpg|png|gif|woff|eot|ttf|svg)$/,
 				use: {
@@ -32,34 +33,35 @@ module.exports = {
 					}
 				}
 			},
-			{
-				test: /\.(styl|css)$/,
-				use: ExtractTextPlugin.extract({
-					use: [
-						'css-loader',
-						{
-							loader: 'stylus-loader',
-							options: {
-								minimize: true,
-								use: [
-									require('nib'),
-									require('rupture')
-								],
-								import: [
-									'~nib/lib/nib/index.styl',
-									'~rupture/rupture/index.styl'
-								]
-							}
-						}
-					]
-				})
-			}
+			// Configuracion para los archivos css
+            {
+                test: /\.css$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    }
+                ]
+            }
 		]
 	},
+
+	// Configuramos la salida del bundle
 	output: {
 		path: path.resolve(__dirname + '/static/js'),
 		filename: 'script.js'
 	},
-	plugins: [new ExtractTextPlugin("../css/[name].css")]
+
+	// Configurando la ruta de salida del css
+    plugins: [
+        new MiniCssExtractPlugin({
+            // Options similar to the same options in webpackOptions.output
+            // both options are optional
+            filename: '../css/bundle.css',
+        })
+    ]
 
 }

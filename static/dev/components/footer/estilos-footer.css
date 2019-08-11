@@ -1,0 +1,38 @@
+.footer-main {
+    display: flex;
+    flex-direction: row;
+    padding: 25px 5%;
+}
+.footer-main .col {
+    display: flex;
+    flex-direction: column;
+}
+.footer-main .col.large {
+    width: 70%;
+    align-items: flex-start;
+}
+.footer-main .col.center {
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+.footer-main .col h3 {
+    text-transform: uppercase;
+    color: #4b4b4b;
+    font-weight: lighter;
+    font-size: 2em;
+}
+.footer-main .col p {
+    margin: 15px 0;
+}
+.footer-main .col img {
+    max-width: 80%;
+}
+.footer-main .col .button-contacto-footer {
+    background-color: #202020;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px;
+}
+  
