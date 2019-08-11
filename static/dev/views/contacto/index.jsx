@@ -1,8 +1,37 @@
 import React, { Component } from 'react'
 import './estilos-contacto.css'
+import moment from 'moment'
 import countries from './countries.json'
 import Footer from '../../components/footer'
 import NavBar from '../../components/navbar'
+import logoLetter from '../../../img/logo@1x.png'
+
+/**Componente que representa el preview del email a enviar */
+const Letter = ({ data }) => (
+    <div className="letter">
+        <div className="row">
+            <h3>
+                <b>From:</b> {data.name} {data.lastName}
+            </h3>
+        </div>
+
+        <div className="row">
+            { moment(new Date()).format('MMMM, Do YYYY') } { data.country !== 'default' && ', ' + data.country }
+        </div>
+
+        <hr/>
+
+        <h5>Message:</h5>
+
+        <p>
+            {data.message}
+        </p>
+
+        <div className="content-logo">
+            <img src={logoLetter} />
+        </div>
+    </div>
+)
 
 /**Componente que renderiza la vista Contacto */
 class Contacto extends Component {
@@ -10,7 +39,8 @@ class Contacto extends Component {
         dataSend: {
             name: '',
             lastName: '',
-            country: 'default'
+            country: 'default',
+            message: ''
         }
     }
 
@@ -40,7 +70,7 @@ class Contacto extends Component {
 
                 <div id="view-contact">
 
-                    <h2>No dudes en contactarnos. Nuestro equipo de trabajo establecera tus dudas.</h2>
+                    <h2>No dudes en contactarnos. Nuestro equipo de trabajo esclarecerá tus dudas.</h2>
 
                     <div className="body-contact">
                         {/* Formulario */}
@@ -78,17 +108,19 @@ class Contacto extends Component {
                             <div className="row">
                                 <span>Mensaje</span>
 
-                                <textarea onChange={this.onHandledChangeInput} type="text" name="message" className="text-input"></textarea>
+                                <textarea onChange={this.onHandledChangeInput} rows={10} type="text" name="message" className="text-input"></textarea>
                             </div>
 
                             <div className="row">
-                                <button onClick={this.onHanldedSubmit} className="btn primary">Enviar</button>
+                                <button onClick={this.onHanldedSubmit} className="btn warning">Enviar</button>
                             </div>
                         </div>
 
                         {/* Preview del formulario */}
-                        <div className="letter"></div>
+                        <Letter data={this.state.dataSend} />
                     </div>
+
+                    <img src="static/img/banner-conctact.jpg" alt="baner not found" draggable={false} className="banner-image" />
                 </div>
 
                 <Footer />

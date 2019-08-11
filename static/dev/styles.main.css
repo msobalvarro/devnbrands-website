@@ -41,8 +41,8 @@ button.btn:hover {
 }
 
 .btn.warning {
-	background-color: #d35400;
-	color: #FFF;
+	background-color: #f1c40f;
+	color: rgb(44, 44, 44);
 }
 
 .btn.error {

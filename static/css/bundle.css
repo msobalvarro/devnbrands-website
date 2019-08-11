@@ -41,8 +41,8 @@ button.btn:hover {
 }
 
 .btn.warning {
-	background-color: #d35400;
-	color: #FFF;
+	background-color: #f1c40f;
+	color: rgb(44, 44, 44);
 }
 
 .btn.error {
@@ -270,7 +270,7 @@ textarea.text-input {
 }
   
 #view-contact {
-    padding: 25px 0;
+    padding-top: 25px;
 }
 
 #view-contact h2 {
@@ -305,6 +305,47 @@ textarea.text-input {
 
 #view-contact .body-contact .letter {
     background-color: #FFF;
+    border-radius: 5px;
+    color: #6d6d6d;
+    padding: 20px;
     min-height: 400px;
+    transition: all 0.2s ease;
     width: 500px;
+}
+
+#view-contact .body-contact .letter:hover {
+    box-shadow: rgba(50, 50, 50, 0.3) 0px 10px 20px;
+    scale: (1.1);
+}
+
+#view-contact .body-contact .letter .row {
+    margin: 10px 0;
+}
+
+#view-contact .body-contact .letter hr {
+    margin: 20px 0;
+    border-color: #CCC;
+}
+
+#view-contact .body-contact .letter p {
+    margin: 20px 0;
+    word-wrap: break-word;
+    min-height: 200px;
+}
+
+#view-contact .body-contact .letter .content-logo {
+    text-align: right;
+}
+
+#view-contact .body-contact .letter .content-logo img {
+    width: 20%
+}
+
+
+#view-contact img.banner-image {
+    height: 400px;
+    margin-top: 40px;
+    opacity: 0.5;
+    object-fit: cover;
+    width: 100%;
 }
