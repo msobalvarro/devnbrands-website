@@ -16,11 +16,21 @@ class Contacto extends Component {
 
     componentDidMount() {}
 
-    /**Escucha todos los cambios de los inputs */
+    /**Escucha todos los cambios de los inputs y actualiza el estado `dataSend` */
     onHandledChangeInput = ({ target }) => {
         const { name, value } = target
 
-        console.log(name, value)
+        this.setState({
+            dataSend: {
+                ...this.state.dataSend,
+                [name]: value
+            }
+        })
+    }
+
+    /**Metodo que se ejecuta cuando enviamos el formulario, (click the button) */
+    onHanldedSubmit = (e) => {
+        e.preventDefault()
     }
 
     render() {
@@ -50,7 +60,7 @@ class Contacto extends Component {
                             <div className="row">
                                 <span>Pais</span>
 
-                                <select onChange={this.onHandledChangeInput} name="country" defaultValue={this.state.dataSend.country}>
+                                <select onChange={this.onHandledChangeInput} name="country" defaultValue={this.state.dataSend.country} className="text-input">
                                     <option disabled={true} value="default">-- Select option --</option>
 
                                     {
@@ -63,6 +73,16 @@ class Contacto extends Component {
                                         )
                                     }
                                 </select>
+                            </div>
+
+                            <div className="row">
+                                <span>Mensaje</span>
+
+                                <textarea onChange={this.onHandledChangeInput} type="text" name="message" className="text-input"></textarea>
+                            </div>
+
+                            <div className="row">
+                                <button onClick={this.onHanldedSubmit} className="btn primary">Enviar</button>
                             </div>
                         </div>
 

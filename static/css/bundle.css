@@ -20,6 +20,40 @@ body {
 	height: 100vh;
 }
 
+button.btn {
+    border-radius: 5px;
+	color: #2d2d2d;
+	border: none;
+    font-weight: bold;
+	text-decoration: none;
+	outline: none;
+	transition: all 0.2s ease;
+    padding: 12px;
+}
+
+button.btn:hover {
+	box-shadow: rgba(250, 250, 250, 0.8) 0px 0px 0px 3px;
+}
+
+.btn.primary {
+	background-color: #2980b9;
+	color: #FFF;
+}
+
+.btn.warning {
+	background-color: #d35400;
+	color: #FFF;
+}
+
+.btn.error {
+	background-color: #e74c3c;
+	color: #FFF;
+}
+
+textarea.text-input {
+	resize: none;
+}
+
 .text-input {
 	color: #FFF;
 	background-color: #4b4b4b;
