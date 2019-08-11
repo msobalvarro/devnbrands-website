@@ -4,7 +4,7 @@ import NavBar from '../components/navbar/'
 import Footer from '../components/footer'
 import Image from 'react-lazy-image'
 import { Link } from 'react-router-dom'
-import './estilos-inicio.styl'
+import './estilos-inicio.css'
 class Index extends PureComponent {
 	render() {
 		return (

@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react'
 import NavBar from '../components/navbar'
 import Footer from '../components/footer'
 import Image from 'react-lazy-image'
-import './estilos-nosotros.styl'
+import './estilos-nosotros.css'
 
 class Nosotros extends PureComponent {
     render() {

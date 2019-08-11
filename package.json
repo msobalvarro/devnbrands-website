@@ -30,6 +30,7 @@
     "express": "^4.16.3",
     "mini-css-extract-plugin": "^0.7.0",
     "url-loader": "^1.0.1",
+    "webpack": "^4.39.1",
     "webpack-cli": "^3.3.5"
   },
   "dependencies": {

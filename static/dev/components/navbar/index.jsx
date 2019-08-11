@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import { Link } from 'react-router-dom'
-import './estilos-navbar.styl'
+import './estilos-navbar.css'
 
 class NavBar extends PureComponent {
 	state = {

@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import './estilos-banner.styl'
+import './estilos-banner.css'
 import Image from 'react-lazy-image'
 
 class Banner extends PureComponent {

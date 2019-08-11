@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react'
 import ReactDOM from 'react-dom'
 import ScrollRevea from 'scrollreveal'
 import { HashRouter, Route, Switch } from 'react-router-dom'
-import './styles.main.styl'
+import './styles.main.css'
 import Inicio from './inicio'
 import Nosotros from './nosotros'
 

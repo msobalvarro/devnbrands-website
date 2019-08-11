@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import { Link } from 'react-router-dom'
 import Image from 'react-lazy-image'
-import './estilos-footer.styl'
+import './estilos-footer.css'
 
 class Footer extends PureComponent {
     render() {
