@@ -20,7 +20,7 @@ body {
 	height: 100vh;
 }
 
-button.btn {
+.btn {
     border-radius: 5px;
 	color: #2d2d2d;
 	border: none;
@@ -31,7 +31,11 @@ button.btn {
     padding: 12px;
 }
 
-button.btn:hover {
+a.btn {
+	text-decoration: none;
+}
+
+.btn:hover {
 	box-shadow: rgba(250, 250, 250, 0.8) 0px 0px 0px 3px;
 }
 
@@ -364,4 +368,48 @@ textarea.text-input {
     opacity: 0.5;
     object-fit: cover;
     width: 100%;
+}
+#view-services {
+    padding: 25px 0;
+}
+
+#view-services h2 {
+    color: #FFF;
+    text-align: center;
+    font-weight: normal;
+}
+
+#view-services .content-products {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+#view-services .content-products .item-product {
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    margin: 20px 0;
+    width: 30%;
+}
+
+#view-services .content-products .item-product figure img {
+    max-width: 50%;
+}
+
+#view-services .content-products .item-product figure figcaption {
+    margin: 20px 0;
+}
+
+#view-services .content-products .item-product p {
+    color: #95989A;
+    max-width: 70%;
+    margin: auto;
+}
+
+
+#view-services .content-products .item-product a {
+    /* max-width: 50%; */
+    margin: 10px auto;
 }
