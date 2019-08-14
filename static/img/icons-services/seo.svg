@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="386.854" height="386.854" viewBox="0 0 386.854 386.854">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="386.854" height="386.854" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Componente_16_1" data-name="Componente 16 – 1" clip-path="url(#clip-path)">
+    <ellipse id="Elipse_19" data-name="Elipse 19" cx="193.427" cy="193.427" rx="193.427" ry="193.427" fill="#7a68c7"/>
+    <path id="Trazado_118" data-name="Trazado 118" d="M248.406,378.673H204.8l7.433-15.857,6.442-14.866h15.857l6.442,14.866Z" transform="translate(-33.327 -108.04)" fill="#ff7058"/>
+    <path id="Trazado_119" data-name="Trazado 119" d="M234.4,412.735H135.3a9.939,9.939,0,0,0-9.91,9.91v32.209H243.816V422.645A9.235,9.235,0,0,0,234.4,412.735Z" transform="translate(8.426 -142.101)" fill="#ffd15c"/>
+    <path id="Trazado_120" data-name="Trazado 120" d="M249.214,362.267a126.651,126.651,0,0,1-11.893,5.451l-2.477.5-2.478-.991a126.748,126.748,0,0,1-11.893-5.451l6.442-14.866h15.361Z" transform="translate(-41.568 -107.49)" fill="#f1543f"/>
+    <path id="Trazado_121" data-name="Trazado 121" d="M0,57.469V77.785c0,49.552,30.722,92.167,73.833,110.006a114.415,114.415,0,0,0,45.092,8.919,114.415,114.415,0,0,0,45.092-8.919c43.11-17.839,73.833-60.454,73.833-110.005V57.469ZM218.029,77.785a98.014,98.014,0,0,1-22.794,62.931c-18.334,21.8-45.588,36.173-76.31,36.173a98.142,98.142,0,0,1-76.31-36.173A99.771,99.771,0,0,1,19.821,77.785v-.5H217.533v.5Z" transform="translate(74.351 44.688)" fill="#f8b64c"/>
+    <path id="Trazado_122" data-name="Trazado 122" d="M235.781,0H81.178a6.025,6.025,0,0,0-5.946,5.946c0,3.469,2.477,6.442,5.946,6.442h154.6a6.025,6.025,0,0,0,5.946-5.946C241.727,2.973,239.249,0,235.781,0Z" transform="translate(34.796 74.903)" fill="#f8b64c"/>
+    <path id="Trazado_123" data-name="Trazado 123" d="M242.374,26.122V79.638a120.758,120.758,0,0,1-77.3,112.483,121.418,121.418,0,0,1-77.3-112.979V26.122Z" transform="translate(28.203 61.169)" fill="#ffd15c"/>
+    <path id="Trazado_124" data-name="Trazado 124" d="M202.43,73.143l10.405,31.713h33.2l-26.758,19.821,9.91,31.714L202.43,136.57,175.672,156.39l9.91-31.714-26.758-19.821h33.2Z" transform="translate(-9.154 36.447)" fill="#fff"/>
+    <rect id="Rectángulo_9" data-name="Rectángulo 9" width="154.106" height="7.433" transform="translate(115.975 87.291)" fill="#ffc952"/>
+  </g>
+</svg>

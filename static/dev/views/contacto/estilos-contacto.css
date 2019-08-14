@@ -51,6 +51,10 @@
     margin: 10px 0;
 }
 
+#view-contact .body-contact .letter h3 span {
+    font-weight: normal;
+}
+
 #view-contact .body-contact .letter hr {
     margin: 20px 0;
     border-color: #CCC;

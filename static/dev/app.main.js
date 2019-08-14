@@ -6,6 +6,7 @@ import './styles.main.css'
 import Inicio from './views/inicio'
 import Nosotros from './views/nosotros'
 import Contacto from './views/contacto'
+import Servicios from './views/servicios'
 
 class App extends PureComponent {
 	componentDidMount() {
@@ -19,6 +20,7 @@ class App extends PureComponent {
                     <Route exact path="/" component={Inicio} />
                     <Route exact path="/nosotros" component={Nosotros} />
                     <Route exact path="/contacto" component={Contacto} />
+                    <Route exact path="/servicios" component={Servicios} />
                 </Switch>
             </HashRouter>
 		)

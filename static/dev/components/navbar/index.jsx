@@ -7,19 +7,23 @@ class NavBar extends PureComponent {
 		items: [
 			{
 				text: 'Inicio',
-				src: '/'
+				src: '/',
+				active: (window.location.hash === '#/'),
 			},
 			{
 				text: 'Nosotros',
-				src: '/nosotros'
+				src: '/nosotros',
+				active: (window.location.hash === '#/nosotros'),
 			},
 			{
 				text: 'Contácto',
-				src: '/contacto'
+				src: '/contacto',
+				active: (window.location.hash === '#/contacto'),
 			},
 			{
 				text: 'Servicios',
-				src: '/'
+				src: '/servicios',
+				active: (window.location.hash === '#/servicios'),
 			},
 		]
 	}
@@ -32,7 +36,7 @@ class NavBar extends PureComponent {
 					this.state.items.map(
 						(item, index) => {
 							return (
-								<Link className='item' to={item.src} key={index}>
+								<Link className={`item ${ (item.active === true) ? ' active' : '' }`} to={item.src} key={index}>
 									{
 										item.text
 									}

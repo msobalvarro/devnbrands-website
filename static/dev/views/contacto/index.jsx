@@ -11,7 +11,7 @@ const Letter = ({ data }) => (
     <div className="letter">
         <div className="row">
             <h3>
-                <b>From:</b> {data.name} {data.lastName}
+                <b>From:</b> <span>{data.email}</span>
             </h3>
         </div>
 
@@ -40,6 +40,7 @@ class Contacto extends Component {
             name: '',
             lastName: '',
             country: 'default',
+            email: '',
             message: ''
         }
     }
@@ -85,6 +86,12 @@ class Contacto extends Component {
                                 <span>Apellidos</span>
 
                                 <input onChange={this.onHandledChangeInput} type="text" name="lastName" className="text-input"/>
+                            </div>
+
+                            <div className="row">
+                                <span>Correo Electronico</span>
+
+                                <input onChange={this.onHandledChangeInput} type="text" name="email" className="text-input"/>
                             </div>
 
                             <div className="row">
