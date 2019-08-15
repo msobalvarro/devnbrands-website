@@ -1,0 +1,51 @@
+.back-modal {
+    align-items: center;
+    background-color: rgba(50, 50, 50, 0.8);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.2s ease;
+    position: fixed;
+    width: 100vw;
+    z-index: 500;
+
+    /* HIDDEN BACKGROUND */
+    opacity: 0;
+    display: none;
+}
+
+.back-modal.show {    
+    display: flex !important;
+}
+
+.back-modal .close-modal {
+    background-image: url(./icon-close.svg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    cursor: pointer;
+    padding: 20px;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+}
+
+.back-modal.show .content-modal {    
+    transform: scale(1);
+}
+
+.back-modal .content-modal {
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 50, 0.8) 0px 10px 10px;
+    padding: 10px;
+    transition: all 1s ease;
+    min-height: 300px;
+    width: 480px;
+
+    transform: scale(0.5);
+}

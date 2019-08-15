@@ -22,8 +22,9 @@ body {
 
 .btn {
     border-radius: 5px;
-	color: #2d2d2d;
 	border: none;
+	color: #2d2d2d;
+	cursor: pointer;
     font-weight: bold;
 	text-decoration: none;
 	outline: none;

@@ -22,7 +22,7 @@ module.exports = {
                     }
 				}
 			},
-
+			
 			// Configuracion de los staticos a base64
 			{
 				test: /\.(jpg|png|gif|woff|eot|ttf|svg)$/,
