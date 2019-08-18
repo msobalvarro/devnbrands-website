@@ -1,8 +1,10 @@
 import React, { PureComponent } from 'react'
 import { Link } from 'react-router-dom'
-import './estilos-servicios.css'
-import services from './products.json'
+import NavBar from '../../components/navbar'
+import Footer from '../../components/footer'
 import Modal from '../../components/modal'
+import services from './products.json'
+import './estilos-servicios.css'
 
 class Servicios extends PureComponent {
     state = {
@@ -33,11 +35,7 @@ class Servicios extends PureComponent {
                     {description}
                 </p>
 
-                <button className="btn warning" onClick={
-                    () => {
-                        this.modal.open()
-                    }
-                }>Get start</button>
+                <Link className="btn warning" to={`/servicios/${iconId}`}>Get start</Link>
             </div>
         )
     }
@@ -49,6 +47,8 @@ class Servicios extends PureComponent {
                     <h2>XDXD</h2>
                 </Modal>
 
+                <NavBar />
+
                 <div id="view-services">
                     <h2>Creacion de productos, aplicaciones y servicios</h2>
 
@@ -58,6 +58,8 @@ class Servicios extends PureComponent {
                         }
                     </div>
                 </div>
+
+                <Footer /> 
 
             </React.Fragment>
         )

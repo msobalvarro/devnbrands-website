@@ -38,7 +38,7 @@
 }
 
 
-#view-services .content-products .item-product button {
+#view-services .content-products .item-product button, a {
     /* max-width: 50%; */
     margin: 10px auto;
 }
