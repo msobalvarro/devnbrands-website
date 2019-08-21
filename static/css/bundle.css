@@ -421,6 +421,7 @@ textarea.text-input {
 
     transform: scale(0.5);
 }
+/* View All services */
 #view-services {
     padding: 25px 0;
 }
@@ -465,3 +466,5 @@ textarea.text-input {
     /* max-width: 50%; */
     margin: 10px auto;
 }
+
+/* View select service */
