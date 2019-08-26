@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import NavBar from '../../components/navbar'
 import Footer from '../../components/footer'
+import imgServives from './services.svg'
 import Data from './products.json'
 
 class ServiceById extends Component {
@@ -12,7 +13,12 @@ class ServiceById extends Component {
             color: '',
             description: ''
         },
-        return: false
+        return: false,
+        urlStaticImage: 'static/img/icons-services',
+        dataForm: {
+            email: '',
+            phone: '',
+        },
     }
 
     componentWillMount() {
@@ -32,8 +38,19 @@ class ServiceById extends Component {
         }
     }
 
+    onHanldedInput = ({ currentTarget }) => {
+        const { value, name } = currentTarget
+
+        this.setState({
+            dataForm: {
+                ...this.state.dataForm,
+                [name]: value
+            }
+        })
+    }
+
     render () {
-        const { dataService } = this.state
+        const { dataService, urlStaticImage } = this.state
 
         // Validate return to services
         if(this.state.return) {
@@ -44,7 +61,32 @@ class ServiceById extends Component {
                     <NavBar />
                     
                     <div id="view-service-id">
-                        <h2>{dataService.name}</h2>
+                        <div className="content-img">
+                            <img src={imgServives} />
+                        </div>
+                        
+                        <form action="#">
+                            <figure>
+                                <img src={`${urlStaticImage}/${dataService.iconId}.svg`} alt={dataService.iconId} />
+                                <figcaption>
+                                    <h2 style={{ color: dataService.color }}>{dataService.name}</h2>
+                                </figcaption>
+                            </figure>
+
+                            <p>{dataService.description}</p>
+
+                            <div className="row">
+                                <input name="email" className="text-input" onChange={this.onHanldedInput} type="email" placeholder="Correo Electronico" />
+                            </div>
+
+                            <div className="row">
+                                <input name="phone" className="text-input" onChange={this.onHanldedInput} type="tel" placeholder="Telefono" />
+                            </div>
+
+                            <div className="row">
+                                <button type="submit" className="btn warning">Enviar</button>
+                            </div>
+                        </form>
                     </div>
 
                     <Footer />

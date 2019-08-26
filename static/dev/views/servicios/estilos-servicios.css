@@ -1,12 +1,30 @@
 /* View All services */
 #view-services {
     padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 #view-services h2 {
     color: #FFF;
     text-align: center;
     font-weight: normal;
+}
+
+#view-services input {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #FFF;
+    border: none;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 20px;
+    width: 90%;
+}
+
+#view-services input::placeholder {
+    color: #FFF;
 }
 
 #view-services .content-products {
@@ -38,10 +56,37 @@
     margin: auto;
 }
 
-
 #view-services .content-products .item-product button, a {
     /* max-width: 50%; */
     margin: 10px auto;
 }
 
 /* View select service */
+#view-service-id {
+    display: flex;
+}
+
+#view-service-id .content-img {
+    max-width: 50%;
+    padding: 25px;
+}
+
+#view-service-id .content-img img {
+    margin: auto;
+    max-width: 80%;
+}
+
+#view-service-id form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#view-service-id form figure img {
+    max-width: 250px;
+}
+
+#view-service-id form figcaption h2 {
+    font-weight: normal;
+}

@@ -10,6 +10,8 @@ class Servicios extends PureComponent {
     state = {
         services: [],
 
+        filter: '',
+
         // Represent url static img 
         urlStaticImage: 'static/img/icons-services',
     }
@@ -23,34 +25,41 @@ class Servicios extends PureComponent {
     itemProduct = ({ name, iconId, color, description }, index) => {
         const { urlStaticImage } = this.state
 
-        return (
-            <div className="item-product" key={index}>
-                <figure>
-                    <img src={`${urlStaticImage}/${iconId}.svg`} alt={iconId} />
+        if(name.length > 0 && name.toLowerCase().search(this.state.filter) > -1) {
+            return (
+                <div className="item-product" key={index}>
+                    <figure>
+                        <img src={`${urlStaticImage}/${iconId}.svg`} alt={iconId} />
+    
+                        <figcaption style={{ color }}>{name}</figcaption>
+                    </figure>
+    
+                    <p className="description">
+                        {description}
+                    </p>
+    
+                    <Link className="btn warning" to={`/servicios/${iconId}`}>Empezar</Link>
+                </div>
+            )
+        }
 
-                    <figcaption style={{ color }}>{name}</figcaption>
-                </figure>
-
-                <p className="description">
-                    {description}
-                </p>
-
-                <Link className="btn warning" to={`/servicios/${iconId}`}>Get start</Link>
-            </div>
-        )
     }
 
     render() {
         return (
             <React.Fragment>
-                <Modal ref={e => this.modal = e}>
-                    <h2>XDXD</h2>
-                </Modal>
-
                 <NavBar />
 
                 <div id="view-services">
                     <h2>Creacion de productos, aplicaciones y servicios</h2>
+
+                    <input type="search" className="input-search" placeholder="Filtrar" onChange={
+                        ({ currentTarget }) => {
+                            const { value } = currentTarget
+
+                            this.setState({ filter: value })
+                        }
+                    } />
 
                     <div className="content-products">
                         {
