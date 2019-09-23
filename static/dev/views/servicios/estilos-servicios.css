@@ -56,7 +56,8 @@
     margin: auto;
 }
 
-#view-services .content-products .item-product button, a {
+#view-services .content-products .item-product button,
+a {
     /* max-width: 50%; */
     margin: 10px auto;
 }
@@ -64,6 +65,7 @@
 /* View select service */
 #view-service-id {
     display: flex;
+    padding: 5em;
 }
 
 #view-service-id .content-img {
@@ -89,4 +91,24 @@
 
 #view-service-id form figcaption h2 {
     font-weight: normal;
+}
+
+#view-service-id form p {
+    font-weight: normal;
+    margin: 25px 0;
+    color: #FFF;
+}
+
+#view-service-id form .row {
+    margin: 10px auto;
+    width: 100%;
+}
+
+#view-service-id form .row.button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#view-service-id form .row input {
+    width: 100%;
 }

@@ -1,0 +1,43 @@
+main#page-404 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.draw-line {
+    background-color: #D1C62C;
+    background-image: url(./img/line-construction.png);
+    background-attachment: fixed;
+    background-size: 50px;
+    height: 50px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+main#page-404 .logo img {
+    max-height: 35vh;
+}
+
+main#page-404 h1 {
+    color: #D1C62C;
+    text-align: center;
+}
+
+main#page-404 h2 {
+    color: #F1F1F1;
+    font-weight: lighter;
+    text-align: center;
+}
+
+main#page-404 h2 a {
+    color: #2199B8;
+}
+
+img.coins {
+    position: absolute;
+    bottom: 0%;
+    right: 1%;
+    width: 25%;
+}

@@ -8,6 +8,7 @@ import Nosotros from './views/nosotros'
 import Contacto from './views/contacto'
 import Servicios from './views/servicios'
 import ServiceById from './views/servicios/servicios'
+import NotFound from './views/404'
 
 class App extends PureComponent {
 	componentDidMount() {
@@ -23,6 +24,7 @@ class App extends PureComponent {
                     <Route path="/contacto" component={Contacto} />
                     <Route exact path="/servicios" component={Servicios} />
 					<Route exact path="/servicios/:id" component={ServiceById} /> 
+					<Route component={NotFound} /> 
                 </Switch>
             </HashRouter>
 		)

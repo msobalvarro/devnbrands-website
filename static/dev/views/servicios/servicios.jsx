@@ -23,11 +23,11 @@ class ServiceById extends Component {
 
     componentWillMount() {
         const { params } = this.props.match
-        if(params.id !== undefined) {
-            
+        if (params.id !== undefined) {
+
             Data.map(
                 (dataService) => {
-                    if(dataService.iconId === params.id) {
+                    if (dataService.iconId === params.id) {
                         this.setState({ dataService })
                     }
                 }
@@ -49,22 +49,22 @@ class ServiceById extends Component {
         })
     }
 
-    render () {
+    render() {
         const { dataService, urlStaticImage } = this.state
 
         // Validate return to services
-        if(this.state.return) {
+        if (this.state.return) {
             return <Redirect to="/servicios" />
         } else {
             return (
                 <React.Fragment>
                     <NavBar />
-                    
+
                     <div id="view-service-id">
                         <div className="content-img">
                             <img src={imgServives} />
                         </div>
-                        
+
                         <form action="#">
                             <figure>
                                 <img src={`${urlStaticImage}/${dataService.iconId}.svg`} alt={dataService.iconId} />
@@ -83,7 +83,7 @@ class ServiceById extends Component {
                                 <input name="phone" className="text-input" onChange={this.onHanldedInput} type="tel" placeholder="Telefono" />
                             </div>
 
-                            <div className="row">
+                            <div className="row button">
                                 <button type="submit" className="btn warning">Enviar</button>
                             </div>
                         </form>
