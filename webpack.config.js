@@ -6,8 +6,8 @@ module.exports = {
 		extensions: ['.js', '.jsx', '.css'] // Archivos que soportará webpack
 	},
 	entry: ['@babel/polyfill', './static/dev/app.main.js'],
-	// mode: 'production',
-	mode: 'development',
+	mode: 'production',
+	// mode: 'development',
 	module: {
 		rules: [
 			// Configuracion de los presets y los archivos de react
